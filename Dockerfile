@@ -6,7 +6,7 @@ RUN set -x && \
   apk add --update --no-cache --virtual wget-dependencies \
     ca-certificates \
     openssl && \
-  # tesserct is in testing repo
+  # tesseract is in testing repo
   echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
   apk add --update --no-cache tesseract-ocr && \
   # download traineddata
