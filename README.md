@@ -15,3 +15,10 @@ basic usage
 ```
 $ docker run --rm -v $HOME/docker-vol:/docker-vol -w /docker-vol gnkm/alpine-tesseract-jpn tesseract image-file output-file -l jpn
 ```
+
+use white list
+
+```
+$ cp numbers.conf $HOME/docker-vol/
+$ docker run --rm -v $HOME/docker-vol:/docker-vol -w /docker-vol gnkm/alpine-tesseract-jpn tesseract image-file output-file -l jpn numbers.conf
+```
