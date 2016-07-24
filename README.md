@@ -10,6 +10,8 @@ dockerfile for building container includes
 
 ## Example
 
+basic usage
+
 ```
-$ docker run -it --name tesseract -v $HOME/docker-vol:/docker-vol -w /docker-vol gnkm/docker pull gnkm/alpine-tesseract-jpn /bin/ash
+$ docker run --rm -v $HOME/docker-vol:/docker-vol -w /docker-vol gnkm/alpine-tesseract-jpn tesseract image-file output-file -l jpn
 ```
